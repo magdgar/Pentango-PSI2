@@ -1,0 +1,28 @@
+<html>
+ <style>
+    body {
+        background: white }
+    form {
+		font-size : 150%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%) }
+	input {
+		font-size: 90%;
+		margin-bottom: 10px;
+	}
+
+  </style>
+<body>
+<form action="http://127.0.0.1:8081/process_add_user" method="GET">
+First name: <input type="text" style="margin-left: 75px" name="first_name">  <br>
+Last name: <input type="text" style="margin-left: 78px" name="last_name"> <br>
+Email: <input type="text"  style="margin-left: 120px" name="email"> <br>
+Password: <input type="text" style="margin-left: 85px" name="password"> <br>
+Confirm password: <input type="text" name="conf_password"> <br>
+<input type="submit" style="margin-left: 150px;" value="Submit">
+</form>
+</body>
+</html>

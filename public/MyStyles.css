@@ -1,0 +1,37 @@
+#stars {
+    width: 300px;
+}
+#root{
+    position: absolute;
+    left: 50%;
+    margin-left: -300px;
+}
+
+
+#kot1{
+    -ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Safari */
+    transform: rotate(-90deg);
+}
+#buttonToReverce{
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Safari */
+    transform: rotate(180deg);
+}
+
+.buttonsDiv{
+    width: 30px;
+}
+.button{
+    width: 50px;
+    weight: auto;
+    padding: 5px;
+}
+#buttons{
+    width: 60px;
+    height: auto;
+}
+.field{
+    width: 100px;
+    height: auto;
+}

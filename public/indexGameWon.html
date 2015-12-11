@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="FunStyle.css">
+    <script src="http://code.jquery.com/jquery-1.9.0.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.0.0.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <title>Fun!!</title>
+</head>
+<body>
+
+<h1 id="title">FUN</h1>
+<aside>
+    <input type="button" class="b" onclick="location.href='indexGameWon.html';" value="Fun" />
+    <input type="button" class="b" onclick="location.href='index.html';" value="New Game" />
+</aside>
+<img id="cat" src="res/nyancat.gif" alt=""/>
+
+<script>
+    $('#title').animate({  borderSpacing: -360 }, {
+        step: function(now,fx) {
+
+            $(this).css("-webkit-transform-origin", "center center" );
+            $(this).css('-moz-transform','rotate('+now+'deg)');
+            $(this).css('transform','rotate('+now+'deg)');
+        },
+        duration:'slow'
+    },'linear');
+
+    $("img").click(function(){
+        $('#title').animate({  borderSpacing: -360 }, {
+            step: function(now,fx) {
+
+                $(this).css("-webkit-transform-origin", "center center" );
+                $(this).css('-moz-transform','rotate('+now+'deg)');
+                $(this).css('transform','rotate('+now+'deg)');
+            },
+            duration:'slow'
+        },'linear');
+    });
+
+</script>
+
+</body>
+</html>

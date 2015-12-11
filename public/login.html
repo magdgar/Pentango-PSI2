@@ -1,0 +1,27 @@
+<html>
+ <style>
+    body {
+        background: white }
+    form {
+		font-size : 150%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%) }
+	input {
+		font-size: 90%;
+		margin-bottom: 10px;
+	}
+
+  </style>
+<body>
+<form action="http://127.0.0.1:8081/process_login_user" method="GET">
+Login: <input type="text" style="margin-left: 35px;" name="first_name">  <br>
+
+Password: <input type="text" name="password"> <br>
+<input type="submit" style="margin-left: 50px; margin-top: 10px;" value="    Submit    ">
+<input type="button" style="margin-left: 35px; margin-top: 10px;" onclick="location.href='logon.html';" value="    Log On    ">
+</form>
+</body>
+</html>
